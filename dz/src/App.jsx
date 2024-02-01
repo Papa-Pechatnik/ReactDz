@@ -46,12 +46,12 @@ const App = () => {
             "age": 1,
             "gender":"жіноча",
             "status": "дочка",
-            "foto": "https://upload.wikimedia.org/wikipedia/uk/9/9d/Maggie_Simpson.png",
-            }
+            "foto": "https://upload.wikimedia.org/wikipedia/uk/9/9d/Maggie_Simpson.png"
+            },
             ]
   return (
     <div>
-    {character.map(character=><Character character={character}/>)}
+    {character.map(character=><Character character={character} key={character.id}/>)}
 </div>
   );
 };
