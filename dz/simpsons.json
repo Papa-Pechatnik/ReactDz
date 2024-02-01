@@ -1,0 +1,46 @@
+[{
+"id": 1,
+"name": "Гомер Джей Сімпсон",
+"short name":"",
+"age": 36,
+"gender":"чоловіча",
+"status": "голова сім'ї",
+"foto": "https://upload.wikimedia.org/wikipedia/uk/0/02/Homer_Simpson_2006.png"
+},
+{
+"id": 2,
+"name": "Марджері Сімпсон",
+"short name": "Мардж",
+"age": 34,
+"gender":"жіноча",
+"status": "дружина Гомера",
+"foto": "https://upload.wikimedia.org/wikipedia/uk/0/0b/Marge_Simpson.png"
+},
+{
+"id": 3,
+"name": "Бартоломью Джо-Джо Сімпсон",
+"short name": "Барт",
+"age": 10,
+"gender":"чоловіча",
+"status": "син",
+"foto": "https://upload.wikimedia.org/wikipedia/uk/a/aa/Bart_simpson.png"
+},
+{
+"id": 4,
+"name": "Елизабет Мері Сімпсон",
+"short name": "Ліза",
+"age": 8,
+"gender":"жіноча",
+"status": "дочка",
+"foto": "https://upload.wikimedia.org/wikipedia/uk/a/ae/Lisasmiling.png"
+},
+{
+"id": 5,
+"name": "Маргарет Сімпсон",
+"short name": "Меґґі",
+"age": 1,
+"gender":"жіноча",
+"status": "дочка",
+"foto": "https://upload.wikimedia.org/wikipedia/uk/9/9d/Maggie_Simpson.png"
+}
+]
