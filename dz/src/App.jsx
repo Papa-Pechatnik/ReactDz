@@ -51,7 +51,9 @@ const App = () => {
             ]
   return (
     <div>
-    {character.map(character=><Character character={character} key={character.id}/>)}
+    {/* {character.map(character => <Character character={character} key={character.id}/>)} */}
+    {character.map(character => <Character {...character} key={character.id}  />)}
+
 </div>
   );
 };
