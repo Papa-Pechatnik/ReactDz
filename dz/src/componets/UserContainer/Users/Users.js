@@ -1,17 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import User from '../User/User';
 
 const Users = () => {
 
-    let users = [];
+    const state = useState([]);
+    const [users, setUsers] = state;
 
-    fetch ("https://jsonplaceholder.typicode.com/")
-    .then (value => value.json())
-    .then (value => {users = value})
-    
+    useEffect(() => {
+        fetch ("https://jsonplaceholder.typicode.com/users")
+        .then (value => value.json())
+        .then (value => setUsers(value))
+    }, [])
+       
     return (
         <div>
-        {console.log(users)}
+            {/* {console.log(users)} */}
             {users.map(user => <User user={user} key={user.id}/> )}
         </div>
     );
