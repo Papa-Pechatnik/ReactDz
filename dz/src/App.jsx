@@ -1,9 +1,10 @@
 import './App.css';
+import Posts from './components/PostsComponents/Posts/Posts';
 
 const App = () => {
   return (
     <div className="content">
-    Start
+    <Posts/>
     </div>
   );
 };
