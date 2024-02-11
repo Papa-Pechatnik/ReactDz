@@ -1,13 +1,17 @@
 import React from 'react';
 
 const UserDetails = ({userDetails}) => {
-    const {id} = userDetails;
+    // if (!userDetails) {
+    //     return <div>User details not available</div>
+    //   }
+
+    const {id, name, username, email} = userDetails;
     return (
         <div>
             <div> id: {id} </div>
-            {/* <div> name: {name} </div>
+            <div> name: {name} </div>
             <div> username: {username} </div>
-            <div> email: {email}</div> */}
+            <div> email: {email}</div>
         </div>
     );
 };

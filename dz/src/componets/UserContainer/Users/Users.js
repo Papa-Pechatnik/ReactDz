@@ -4,6 +4,8 @@ import React, { useEffect, useState} from 'react';
 import { userService } from '../../service/userService';
 import User from '../User/User';
 import  UserDetails  from '../UserDetails/UserDetails';
+import css from '../Users/Users.module.css'; 
+
 
 
 // import { axiosService } from '../../service/axiosService';
@@ -33,12 +35,13 @@ const Users = () => {
         };
 
     return (
-        <div>
+        <div className={css.Users}>
             {users.map(user => <User user={user} key={user.id} getCurrentUser={getCurrentUser}/> )}
             
-            {UserDetails && <UserDetails userDetails={userDetails}/>}
+            {userDetails!=null && <UserDetails userDetails={userDetails}/>}
+
         </div>
-    );
+    )
 };
 
 export default Users;
