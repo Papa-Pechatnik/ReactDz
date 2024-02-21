@@ -1,10 +1,17 @@
 import React from 'react';
 
-const PostDetails = () => {
+const PostDetails = ({postDetails}) => {
+    const {userId, id, title, body} = postDetails;
+
     return (
-        <div>
-            PostDetails
-        </div>
+
+            <ul>
+                <li>userId:{userId}</li>
+                <li>id:{id}</li>
+                <li>title:{title}</li>
+                <li>body:{body}</li>
+            </ul>
+
     );
 };
 

@@ -13,7 +13,7 @@ pnpm install
 Start the dev server:
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
 Build the app for production:

@@ -1,9 +1,17 @@
 import React from 'react';
 
-const Post = () => {
+
+const Post = ({post, getCurrentPosts}) => {
+    const {id, title} = post;
+
+
+
     return (
         <div>
-            Post
+            <div> id: {id}</div>
+            <div> title: {title}</div>
+            <button onClick={()=>getCurrentPosts(post)}> Кнопка { id }</button>
+           
         </div>
     );
 };
